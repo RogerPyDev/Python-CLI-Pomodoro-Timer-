@@ -22,3 +22,25 @@ def countdown(minutes):
     except KeyboardInterrupt: 
         print("\n⏹⏹⏹ Temporizador detenido por el usuario") # Mostramos un mensaje si el usuario interrumpe el temporizador
         sys.exit() # Salimos del programa
+        
+        # Si el usuario presiona ctrl+c, el temporizador se detiene.
+
+
+def pomodoro_cycle():
+    # Función que ejecuta un cciclo completo de sesiones de trabajo y descansos
+    print("📋 Bienvenido al Pomodoro Timer CLI")
+    print(f"👉 Configuración: {WORK_TIME} minutos de trabajo, {SHORT_BREAK} minutos de descanso corto, {LONG_BREAK} minutos de descando largo.\n")
+    
+    for cycle in range(1, CYCLES + 1): # Iteramos por cada ciclo
+        print(f"📝 Ciclo {cycle} de {CYCLES}")
+        print("⏳ Inicia tu sesión de trabajo...")
+        countdown(WORK_TIME) # Ejecutamos una sesión de trabajo
+        
+        if cycle < CYCLES: # Si no es el último ciclo
+            print(f"🛌 Tómate und descanso corto de {SHORT_BREAK} minutos...")
+            countdown(SHORT_BREAK)
+        else:
+            print(f"🎉 Tómate un descanso largo de {LONG_BREAK} minutos...")
+            countdown(LONG_BREAK)
+    
+    print("\n✅ Felicidades, has completado todos los ciclos!")
