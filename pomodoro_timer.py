@@ -11,14 +11,14 @@ CYCLES = 4 # Número de ciclos de trabajo antes de un descanso largo
 def countdown(minutes):
 # Función que ejecuta una cuenta regresiva y muestra el tiempo restante.
     seconds = minutes * 60 # Convertimos minutos a segundos
-    try:
-        while seconds > 0:
-            mins, secs = divmod(seconds, 60)
-            timer = f"{mins:02}:{secs:02}"
-            print(f"\r⏳ Tiempo restante: {timer}", end="")
-            time.sleep(1)
-            seconds -= 1
-        print("\n⏰⏰ ¡Felicidades, has terminado tu sesión!")
-    except KeyboardInterrupt:
-        print("\n⏹⏹⏹ Temporizador detenido por el usuario")
-        sys.exit()
+    try: # Intentamos ejecutar el código
+        while seconds > 0: # Mientras queden segundos
+            mins, secs = divmod(seconds, 60) # Dividimos los segundos en minutos y segundos
+            timer = f"{mins:02}:{secs:02}" # Formateamos el tiempo en formato MM:SS
+            print(f"\r⏳ Tiempo restante: {timer}", end="") # Mostramos el tiempo restante
+            time.sleep(1) # Esperamos 1 segundo
+            seconds -= 1 # Reducimos el tiempo en 1 segundo
+        print("\n⏰⏰ ¡Felicidades, has terminado tu sesión!") # Mostramos un mensaje cuando se acaba el tiempo
+    except KeyboardInterrupt: 
+        print("\n⏹⏹⏹ Temporizador detenido por el usuario") # Mostramos un mensaje si el usuario interrumpe el temporizador
+        sys.exit() # Salimos del programa
