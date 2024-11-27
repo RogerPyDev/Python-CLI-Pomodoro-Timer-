@@ -27,7 +27,7 @@ def countdown(minutes):
 
 
 def pomodoro_cycle():
-    # Función que ejecuta un cciclo completo de sesiones de trabajo y descansos
+    # Función que ejecuta un ciclo completo de sesiones de trabajo y descansos
     print("📋 Bienvenido al Pomodoro Timer CLI")
     print(f"👉 Configuración: {WORK_TIME} minutos de trabajo, {SHORT_BREAK} minutos de descanso corto, {LONG_BREAK} minutos de descando largo.\n")
     
