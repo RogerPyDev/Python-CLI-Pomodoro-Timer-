@@ -40,7 +40,7 @@ def pomodoro_cycle():
         if cycle < CYCLES:  # Si no es el último ciclo
             print(f"🛌 Tómate un descanso corto de {SHORT_BREAK} minutos...")
             countdown(SHORT_BREAK)
-        else:
+        else:  # Último ciclo
             print(f"🎉 Tómate un descanso largo de {LONG_BREAK} minutos...")
             countdown(LONG_BREAK)
 
