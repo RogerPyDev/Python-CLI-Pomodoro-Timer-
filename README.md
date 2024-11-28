@@ -45,49 +45,83 @@ Un **Pomodoro Timer** interactivo para la consola, diseñado en Python. Este pro
 2. Navega al directorio del proyecto:
    ```bash
    cd pomodoro-timer-cli
-
+   ```
 3. (Opcional) Crea un entorno virtual y actívalo:
    ```bash
    python -m venv venv
    source venv/bin/activate  # Para macOS/Linux
    venv\Scripts\activate     # Para Windows
-
-5. Ejecuta el programa:
+   ```
+4. Ejecuta el programa:
    ```bash
    python pomodoro_timer.py
+   ```
 
 ---
 
 ## 🖥️ **Uso**
-1. Al iniciar el programa, selecciona la opción 1 para empezar el ciclo Pomodoro.
+1. Al iniciar el programa, selecciona la opción **1** para empezar el ciclo Pomodoro.
 2. Sigue las instrucciones para completar sesiones de trabajo y descansos.
-3. Selecciona la opción 2 para salir del programa.
+3. Selecciona la opción **2** para salir del programa.
 
 ---
 
 ## 📝 **Ejemplo de Uso**
-    ```bash
-     Menu:
-    1. Iniciar Pomodoro Timer
-    2. Salir
-    Selecciona una opción (1 o 2): 1
+```bash
+Menu:
+1. Iniciar Pomodoro Timer
+2. Salir
+Selecciona una opción (1 o 2): 1
 
-    🔄 Ciclo 1 de 4
-    ⏳ Inicia tu sesión de trabajo...
-    ⏳ Tiempo restante: 24:59
-    ...
-    ⏰ ¡Tiempo cumplido!
-    🛌 Tómate un descanso corto de 5 minutos.
-    ⏳ Tiempo restante: 04:59
-    ...
+🔄 Ciclo 1 de 4
+⏳ Inicia tu sesión de trabajo...
+⏳ Tiempo restante: 24:59
+...
+⏰ ¡Tiempo cumplido!
+🛌 Tómate un descanso corto de 5 minutos.
+⏳ Tiempo restante: 04:59
+...
+```
 
 ---
 
 ## ✨ **Personalización**
-Puedes ajustar los valores de las sesiones en el archivo pomodoro_timer.py modificando las siguientes variables al inicio del script:
-   ```bash
-       Menu:
-        WORK_TIME = 25  # Duración de la sesión de trabajo (en minutos)
-        SHORT_BREAK = 5  # Duración de un descanso corto (en minutos)
-        LONG_BREAK = 15  # Duración de un descanso largo (en minutos)
-        CYCLES = 4  # Número de ciclos antes del descanso largo
+Puedes ajustar los valores de las sesiones en el archivo `pomodoro_timer.py` modificando las siguientes variables al inicio del script:
+
+```python
+WORK_TIME = 25  # Duración de la sesión de trabajo (en minutos)
+SHORT_BREAK = 5  # Duración de un descanso corto (en minutos)
+LONG_BREAK = 15  # Duración de un descanso largo (en minutos)
+CYCLES = 4  # Número de ciclos antes del descanso largo
+```
+
+---
+
+## 🛠️ **Tecnologías Utilizadas**
+- **Lenguaje**: Python
+- **Módulos estándar**:
+  - `time`: Para gestionar temporizadores.
+  - `sys`: Para manejar interrupciones.
+
+---
+
+## 🐛 **Reporte de Errores**
+Si encuentras un problema o tienes alguna sugerencia, abre un **issue** en este repositorio o contáctame directamente.
+
+---
+
+## 📜 **Licencia**
+Este proyecto está bajo la licencia [MIT](LICENSE). Siéntete libre de usarlo, modificarlo y compartirlo. 😊
+
+---
+
+## 🙌 **Agradecimientos**
+Este proyecto fue diseñado como parte de un aprendizaje práctico de Python. ¡Espero que te sea útil para gestionar tus sesiones de trabajo!
+
+---
+
+## 📧 **Contacto**
+Creador: [Tu Nombre](https://github.com/RogerPyDev)   
+GitHub: [Tu Usuario](https://github.com/RogerPyDev)
+
+
