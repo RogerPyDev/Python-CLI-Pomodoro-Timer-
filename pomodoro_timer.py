@@ -38,10 +38,32 @@ def pomodoro_cycle():
         countdown(WORK_TIME)  # Ejecutamos una sesión de trabajo
 
         if cycle < CYCLES:  # Si no es el último ciclo
-            print(f"🛌 Tómate und descanso corto de {SHORT_BREAK} minutos...")
+            print(f"🛌 Tómate un descanso corto de {SHORT_BREAK} minutos...")
             countdown(SHORT_BREAK)
         else:
             print(f"🎉 Tómate un descanso largo de {LONG_BREAK} minutos...")
             countdown(LONG_BREAK)
 
     print("\n✅ Felicidades, has completado todos los ciclos!")
+
+
+def main():
+    # Función principal que inicia el programa y maneja la intercación con el usuario
+
+    while True:
+        print("\nMenú:")
+        print("1. Iniciar el Temporizador")
+        print("2. Salir")
+        choice = input("Elige una opción (1 o 2): ").strip()
+
+        if choice == "1":
+            pomodoro_cycle()  # Inicia el temporizador
+        elif choice == "2":
+            print("👋 ¡Gracias por usar Pomodoro Timer! Hasta luego!")
+            break
+        else:
+            print("⚠️❌ Opción inválida. Por favor, elige una opción válida, 1 o 2.")
+
+
+if __name__ == "__main__":
+    main()
