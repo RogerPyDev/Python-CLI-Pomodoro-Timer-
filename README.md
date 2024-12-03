@@ -124,4 +124,11 @@ Este proyecto fue diseñado como parte de un aprendizaje práctico de Python. ¡
 Creador: [Tu Nombre](https://github.com/RogerPyDev)   
 GitHub: [Tu Usuario](https://github.com/RogerPyDev)
 
+---
+
+### ¡Apoya mi trabajo!
+Si estos proyectos CLI te son útiles y quieres contribuir a su desarrollo continuo, considera apoyarme:  
+- ❤️ [Conviértete en mi sponsor en GitHub](https://github.com/sponsors/RogerPyDev)  
+
+Tu apoyo me ayuda a seguir creando herramientas profesionales y compartirlas con la comunidad. ¡Gracias por hacerlo posible! 🙌
 
